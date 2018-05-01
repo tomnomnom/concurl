@@ -7,7 +7,7 @@ Concurrently request URLs provided on `stdin` using the `curl` command line util
 With Go:
 
 ```
-▶ go get -u github.com/tomnomnom/hacks/concurl
+▶ go get -u github.com/tomnomnom/concurl
 ```
 
 ## Usage

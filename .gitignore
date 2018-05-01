@@ -1,2 +1,4 @@
 concurl
 *.tgz
+*.exe
+*.zip
