@@ -10,6 +10,8 @@ With Go:
 ▶ go get -u github.com/tomnomnom/concurl
 ```
 
+Or [download a release for your platform](https://github.com/tomnomnom/concurl/releases).
+
 ## Usage
 
 Basic usage:
