@@ -27,6 +27,9 @@ func main() {
 	var outputDir string
 	flag.StringVar(&outputDir, "o", "out", "Output directory")
 
+	var noSave bool
+	flag.BoolVar(&noSave, "no-save", false, "Don't save responses")
+
 	flag.Parse()
 
 	// channel to send URLs to workers
@@ -64,6 +67,11 @@ func main() {
 				out, err := cmd.CombinedOutput()
 				if err != nil {
 					fmt.Printf("failed to get output: %s\n", err)
+					continue
+				}
+
+				if noSave {
+					fmt.Println(u)
 					continue
 				}
 
